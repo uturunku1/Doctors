@@ -1,10 +1,9 @@
 var Issue = require('./../js/search.js').issueModule;
 
 var displayDoctors = function(practicesNames){
-  console.log("practicesNames:"+ practicesNames);
   $('#practicesNames').empty();
   for (var i = 0; i < practicesNames.length; i++) {
-    $('#practicesNames').append(practicesNames[i]);
+    $('#practicesNames').append('<li> '+ practicesNames[i]+ ' </li>');
   }
 };
 
@@ -14,5 +13,6 @@ $(document).ready(function() {
     var userInput= $('#issue').val();
     var newIssue = new Issue();
     newIssue.getDoctors(userInput, displayDoctors);
+    $('#result').show();
   });
 });
