@@ -1,0 +1,23 @@
+body {
+  height: 1200px;
+  background: url('/../img/scrubs1.jpeg') no-repeat center center;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+}
+#intake-form {
+  background: rgba(141, 235, 252, .6);
+}
+
+#result {
+  display: none;
+  background: rgb(141, 235, 252);
+}
+
+// .col-sm-2 {
+//   border: 2px solid black;
+//   background: url("/../img/scrubs.jpeg");
+//   background-size: 100% 100%;
+//   min-height: 200px;
+// }
