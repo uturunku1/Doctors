@@ -19,7 +19,8 @@ sass http://sass-lang.com/install
 
 
 ## Installation Instructions
-* Clone this repository project.
+
+Clone this repository project.
 
 Get your API key from "BetterDoctorsAPI" or developer.betterdoctor.com
 
@@ -65,7 +66,7 @@ gulp serve
 * MIT
 * Copyright (c) 2017 Stella Huayhuaca
 
-##Specs/ Plan
+## Specs/ Plan
 * Build npm, gulp, and sass framework.
 * design front end to search information and display the results.
 * separate js files for manipulation of front end data into api search form
