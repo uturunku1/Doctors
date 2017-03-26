@@ -6,7 +6,7 @@ function Issue(userInput)
 }
 
 //Create prototype method to manipulate API data:
-Issue.prototype.getDoctors = function() {
+Issue.prototype.getDoctors = function(displayDoctors) {
   var outputs=[];
 
   var practicesNames= [];
@@ -35,12 +35,12 @@ Issue.prototype.getDoctors = function() {
   });
 };
 
-//Create method to display data:
-var displayDoctors = function(outputs){
-  for (var i = 0; i < outputs.length; i++) {
-    $('#result').append('<h3> '+ outputs[i].name+ ' </h3>'+ '<p> Phone Number: '+outputs[i].phone+' </p>'+'<p>'+ outputs[i].bio+'</p>'+'<img src="'+outputs[i].image+'"/>');
-  }
-};
+// //Create method to display data:
+// var displayDoctors = function(outputs){
+//   for (var i = 0; i < outputs.length; i++) {
+//     $('#result').append('<h3> '+ outputs[i].name+ ' </h3>'+ '<p> Phone Number: '+outputs[i].phone+' </p>'+'<p>'+ outputs[i].bio+'</p>'+'<img src="'+outputs[i].image+'"/>');
+//   }
+// };
 
 //export object:
 exports.issueModule = Issue;
